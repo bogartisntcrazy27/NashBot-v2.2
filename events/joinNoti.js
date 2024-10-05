@@ -5,7 +5,7 @@ module.exports = {
   name: "joinNoti",
   version: "1.0.0",
   description: "Join notifications",
-  author: "joshuaApostol",
+  author: "loumpia",
   async onEvent({ api, event, prefix }) {
     try {
       const { logMessageType, logMessageData, threadID } = event;
@@ -15,7 +15,7 @@ module.exports = {
             (i) => i.userFbId === api.getCurrentUserID()
           )) {
           api.changeNickname(
-            `[ ${prefix} ]: NashBoT`,
+            `[ ${prefix} ]: toshi`,
             threadID,
             api.getCurrentUserID()
           );
