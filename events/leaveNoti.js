@@ -6,7 +6,7 @@ module.exports = {
   name: "leaveNoti",
   version: "1.0.0",
   description: "Leave notifications",
-  author: "joshuaApostol",
+  author: "loumpia",
   async onEvent({ api, event, prefix }) {
     try {
       const { logMessageType, logMessageData, threadID } = event;
@@ -16,7 +16,7 @@ module.exports = {
         logMessageData.leftParticipantFbId === api.getCurrentUserID()
       ) {
         api.changeNickname(
-          `[ ${prefix} ]: NashBoT`,
+          `[ ${prefix} ]: toshi`,
           threadID,
           api.getCurrentUserID()
         );
